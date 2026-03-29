@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SM Celebrations</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+  background:#0b1c1c;
+  color:white;
+}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  backdrop-filter:blur(10px);
+  background:rgba(0,0,0,0.6);
+  display:flex;
+  justify-content:space-between;
+  padding:15px 40px;
+  z-index:1000;
+}
+
+.logo{display:flex;align-items:center;}
+.logo img{width:45px;margin-right:10px;}
+
+nav a{
+  color:#ffd700;
+  margin-left:20px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:white;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+  url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d');
+  background-size:cover;
+}
+
+.hero h1{
+  font-size:50px;
+  color:#ffd700;
+}
+
+.hero p{
+  margin:15px 0;
+  font-size:18px;
+}
+
+.btn{
+  padding:14px 30px;
+  background:#ffd700;
+  color:black;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+}
+
+/* SECTION */
+section{
+  padding:80px 40px;
+  text-align:center;
+}
+
+/* SERVICES */
+.service-box{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:25px;
+  border-radius:20px;
+  backdrop-filter:blur(10px);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+/* PACKAGES */
+.pricing{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.price-card{
+  background:#122;
+  padding:30px;
+  border-radius:20px;
+  border:1px solid #ffd700;
+}
+
+.price-card h3{
+  color:#ffd700;
+}
+
+.price-card button{
+  margin-top:15px;
+}
+
+/* GALLERY */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+  margin-top:30px;
+}
+
+.grid img{
+  width:100%;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.grid img:hover{
+  transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+  background:#000;
+  text-align:center;
+  padding:20px;
+  color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png">
+    <h2>SM Celebrations</h2>
+  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Packages</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>We Create Memorable Moments</h1>
+    <p>Birthdays • Anniversary • Decorations • Events</p>
+    <button class="btn" onclick="window.open('https://wa.me/91XXXXXXXXXX')">
+      Book Now
+    </button>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="service-box">
+    <div class="card">🎂 Birthday Decoration</div>
+    <div class="card">💍 Anniversary Setup</div>
+    <div class="card">🎉 Party Planning</div>
+    <div class="card">🏠 Indoor & Outdoor Decor</div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Our Packages</h2>
+  <div class="pricing">
+    <div class="price-card">
+      <h3>Basic</h3>
+      <p>Simple Decoration</p>
+      <button class="btn">Book</button>
+    </div>
+    <div class="price-card">
+      <h3>Standard</h3>
+      <p>Decor + Setup</p>
+      <button class="btn">Book</button>
+    </div>
+    <div class="price-card">
+      <h3>Premium</h3>
+      <p>Full Event Setup</p>
+      <button class="btn">Book</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Work</h2>
+  <div class="grid">
+    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176">
+    <img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84">
+    <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93">
+    <img src="https://images.unsplash.com/photo-1521334884684-d80222895322">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>📞 +91 XXXXX XXXXX</p>
+  <p>📍 Rajahmundry</p>
+</section>
+
+<footer>
+  <p>© 2026 SM Celebrations | Premium Website</p>
+</footer>
+
+</body>
+</html>
